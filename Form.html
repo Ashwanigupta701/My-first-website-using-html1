@@ -1,19 +1,52 @@
 <!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div {
+  offset-path: path('M20,20 C20,100 200,0 200,100');
+  animation: move 3000ms infinite alternate ease-in-out;
+  width: 40px;
+  height: 40px;
+  background: cyan;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+</style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>The animation-delay Property</h1>
+
+<p>Start the animation after 2 seconds:</p>
+<div></div>
+
+<p><strong>Note:</strong> The animation-delay property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>  Form </title>
   </head>
-  <body>
-   <form class="" action="mailto :info@londonappbrewery.com" method="post">
+  <body style="background-color: powderblue;">
+  <form action="mailto:ag446042@gmail.com?subject=feedbac" method="post" enctype="text/plain">
      <label >Your Name</label>
-     <input type="text" name="" value=""><br>
-
-
+     <input type="text" name="Your Name" value=""><br>
      <label>Your Email</label>
-     <input type="email" name="" value=""><br>
+     <input type="email" name="Your Email" value=""><br>
      <label> Your Message</label><br>
-    <textarea name="name" rows="10" cols="30"></textarea><br>
+    <textarea name=" Your Message" rows="10" cols="30"></textarea><br>
      <input type="submit" name="" ><br>
      <input type="file" name="" value=""><br>
      <input type="date" name="" value=""><br>
